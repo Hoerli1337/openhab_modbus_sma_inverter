@@ -31,41 +31,7 @@ String                    inverter1OpMode               "Operation Mode [MAP(sma
 
 Number:Temperature        inverter1InternalTemperature  "Internal Temperature [%.1f °C]"              <temperature>   (Inverter1)  ["Measurement", "Temperature"]  {channel="modbus:data:inverter1:InternalTemperature:InternalTemperature:number"}
 
-
-// Inverter 2 SunnyBoy Storage 3.7-10
-String                    inverter2DevType              "Inverter type [MAP(sma.map):%s]"             <inverter>      (Inverter2)  ["Status", "Power"]             {channel="modbus:data:inverter2:device_typ:device_typ:string"}
-String                    inverter2Status               "Device Status [MAP(sma.map):%s]"             <status>        (Inverter2)  ["Status", "Power"]             {channel="modbus:data:inverter2:status:status:string"}
-String                    inverter2GridRelay            "Grid Relay [MAP(sma.map):%s]"                <status>        (Inverter2)  ["Status", "Power"]             {channel="modbus:data:inverter2:GridRelay:GridRelay:string"}
-Number:Energy             inverter2TotalYield           "Total Yield [%.0f kWh]"                      <line>          (Inverter2)  ["Measurement", "Energy"]       {channel="modbus:data:inverter2:TotalYield:TotalYield:number"}
-Number:Energy             inverter2DayYield             "Daily Yield [%.0f kWh]"                      <line>          (Inverter2)  ["Measurement", "Energy"]       {channel="modbus:data:inverter2:DayYield:DayYield:number"}
-Number:Power              inverter2Power                "Power [%.0f W]"                              <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:Power:Power:number"}
-Number:Power              inverter2PowerL1              "Power L1 [%.0f W]"                           <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:Power:PowerL1:number"}
-Number:ElectricPotential  inverter2GVoltageL1           "Grid Voltage L1 [%.2f V]"                    <Energy>        (Inverter2)  ["Measurement", "Energy"]       {channel="modbus:data:inverter2:GVoltageL1:GVoltageL1:number"}
-
-Number:Dimensionless      inverter2BatStateCharge       "Current Battery State Charge [%.0f %%]"      <batterylevel>  (Inverter2)  ["Measurement", "Level"]        {channel="modbus:data:inverter2:CurrentBatStatCharge:CurrentBatStatCharge:number"}
-Number:Dimensionless      inverter2BatCapacity          "Current Battery Capacity [%.0f %%]"          <status>        (Inverter2)  ["Status", "Level"]             {channel="modbus:data:inverter2:CurrentBatStatCharge:CurrentBatcapacity:number"}
-Number:Temperature        inverter2BatTemp              "Current Battery Temperature [%.1f °C]"       <temperature>   (Inverter2)  ["Measurement", "Temperature"]  {channel="modbus:data:inverter2:CurrentBatStatCharge:CurrentBatTemp:number"}
-
-Number:Power              inverter2PowerDrawn           "Power drawn from Grid [%.0f W]"              <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawn:PowerDrawn:number"}
-Number:Power              inverter2PowerGridFeedIn      "Power feedin Grid [%.0f W]"                  <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawn:PowerGridFeedIn:number"}
-
-String                    inverter2BatteryStatus        "Battery status [MAP(sma.map):%s]"            <status>        (Inverter2)  ["Status", "Power"]             {channel="modbus:data:inverter2:BatteryStatus:BatteryStatus:string"}
-String                    inverter2BatAppArea           "Battery Application Area [MAP(sma.map):%s]"  <status>        (Inverter2)  ["Status", "Power"]             {channel="modbus:data:inverter2:BatteryAppArea:BatteryAppArea:string"}
-
-Number:Power              inverter2PowGridFeedL1        "Power feedin Grid L1 [%.0f W]"               <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerGridFeedL1:number"}
-Number:Power              inverter2PowGridFeedL2        "Power feedin Grid L2 [%.0f W]"               <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerGridFeedL2:number"}
-Number:Power              inverter2PowGridFeedL3        "Power feedin Grid L3 [%.0f W]"               <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerGridFeedL3:number"}
-Number:Power              inverter2PowDraGridL1         "Power drawn from Grid L1 [%.0f W]"           <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerDrawnGridL1:number"}
-Number:Power              inverter2PowDraGridL2         "Power drawn from Grid L2 [%.0f W]"           <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerDrawnGridL2:number"}
-Number:Power              inverter2PowDraGridL3         "Power drawn from Grid L3 [%.0f W]"           <Energy>        (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PowerDrawnGridL1:PowerDrawnGridL3:number"}
-
-Number:Power              inverter2PreBatCharge         "Present Battery Charge [%.0f W]"             <batterylevel>  (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PresBatCharge:PresBatCharge:number"}
-Number:Power              inverter2PreBatDischarge      "Present Battery Discharge [%.0f W]"          <batterylevel>  (Inverter2)  ["Measurement", "Power"]        {channel="modbus:data:inverter2:PresBatCharge:PresBattDischarge:number"}
-
-Number:Temperature        inverter2InternalTemperature  "Internal Temperature [%.1f °C]"              <temperature>   (Inverter2)  ["Measurement", "Temperature"]  {channel="modbus:data:inverter2:InternalTemperature:InternalTemperature:number"}
-
-Number:Energy             inverter2BatNormCapac         "Battery Norminal Capacity [%.0f Wh]"         <text>          (Inverter2)  ["Measurement", "Energy"]       {channel="modbus:data:inverter2:BattNormCap:BattNorminalcapac:number"}
-
+// Paste here alls from above again and rename the items correctly to add a second inverter
 
 // Total Power Consumption
 Number:Power              TotalPowerConsumption         "Total Consumption [%.0f W]"                  <house>         (Inverter1)  ["Measurement", "Power"]
