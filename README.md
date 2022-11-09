@@ -1,3 +1,9 @@
+# About this fork
+This fork contains only a view adjustments.
+I only have inverters and no battery-stuff.
+Also i added new models to the .map-File, based on this infos: https://files.sma.de/downloads/SMA_Modbus-de-en_V25.zip
+
+
 # openhab_modbus_sma_inverter
 This repository stores everything you need to implement SMA Inverters in openHAB with modbus protocol. All you need is an enabled modbus tcp server on your inverters, an openHAB instance with modbus binding installed and all the stuff out of this repository.
 
