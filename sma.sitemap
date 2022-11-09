@@ -6,9 +6,6 @@ sitemap sma label="SMA PV Installation"
 		Text  item=inverter1ActivePower label="Total Production"
 		Text  item=inverter1PowerGridFeedIn
 		Text  item=inverter1PowerDrawn
-		Text  item=inverter2PreBatCharge
-		Text  item=inverter2PreBatDischarge
-		Text  item=inverter2BatStateCharge
                 Text  item=inverter1PowerA {
                         Text  item=inverter1DC1Volt_input
                         Text  item=inverter1DC1Cur_input
@@ -45,9 +42,6 @@ sitemap sma label="SMA PV Installation"
 			Text  item=inverter1PowerB
 		}
 		Text  item=inverter1ActivePower label="Total Watt"
-		Text  item=inverter2BatStateCharge
-		Text  item=inverter2PreBatCharge
-		Text  item=inverter2PreBatDischarge
 	}
 
 	Frame label="Yield" {
@@ -87,14 +81,4 @@ sitemap sma label="SMA PV Installation"
 		Text  item=inverter2PowGridFeedL3
         }
 
-	Frame label="BYD B-Box HVS 10.2" {
-		Text  item=inverter2BatteryStatus
-		Text  item=inverter2BatAppArea
-		Text  item=inverter2BatCapacity
-		Text  item=inverter2BatNormCapac
-		Text  item=inverter2BatStateCharge
-		Text  item=inverter2PreBatCharge
-		Text  item=inverter2PreBatDischarge
-		Text  item=inverter2BatTemp
-	}
 }
